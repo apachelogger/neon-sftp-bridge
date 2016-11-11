@@ -1,0 +1,11 @@
+[Unit]
+Description=Neon SFTP Bridge to depot.kde.org
+
+[Service]
+WorkingDirectory=/home/neon-sftp-bridge/data
+Environment=PORT=9191
+ExecStart=/home/neon-sftp-bridge/bin/neon-sftp-bridge
+Restart=always
+
+[Install]
+WantedBy=default.target
