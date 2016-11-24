@@ -156,5 +156,6 @@ func main() {
 
 	// The bridge technically allows inspection of the entire remote user's home
 	// this is a security hazard and so this MUST be locked to localhost!
-	router.Run("localhost:" + port)
+	// 172.17.0.1 is docker container, which is close enough to localhost.
+	router.Run("172.17.0.1:" + port)
 }
