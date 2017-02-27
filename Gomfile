@@ -1,3 +1,0 @@
-gom 'github.com/gin-gonic/gin'
-gom 'github.com/pkg/sftp'
-gom 'golang.org/x/crypto/ssh'
